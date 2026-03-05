@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.chemclipse.wsd.converter.chromatogramSupplier">
+      <ChromatogramSupplier
+            description="Reads AXR JSON chromatograms."
+            fileExtension=".axr"
+            filterName="AXR Chromatogram (*.axr)"
+            id="net.openchrom.wsd.converter.supplier.axr"
+            importConverter="net.openchrom.wsd.converter.supplier.axr.converter.ChromatogramImportConverter"
+            importMagicNumberMatcher="net.openchrom.wsd.converter.supplier.axr.converter.MagicNumberMatcher"
+            isExportable="false"
+            isImportable="true">
+      </ChromatogramSupplier>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="net.openchrom.wsd.converter.supplier.axr.ui.editors.EditorAxr"
+            extensions="axr"
+            id="net.openchrom.wsd.converter.supplier.axr.ui.editors.editorAxr"
+            name="AXR Chromatogram">
+      </editor>
+   </extension>
+</plugin>
