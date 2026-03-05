@@ -14,13 +14,4 @@
             isImportable="true">
       </ChromatogramSupplier>
    </extension>
-   <extension
-         point="org.eclipse.ui.editors">
-      <editor
-            class="net.openchrom.wsd.converter.supplier.axr.ui.editors.EditorAxr"
-            extensions="axr"
-            id="net.openchrom.wsd.converter.supplier.axr.ui.editors.editorAxr"
-            name="AXR Chromatogram">
-      </editor>
-   </extension>
 </plugin>
